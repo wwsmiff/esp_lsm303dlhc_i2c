@@ -1,0 +1,6 @@
+"-specs=/home/arvk/esp/lsm303dlhc_i2c/build/bootloader/specs/picolibc.specs"
+-Wno-frame-address
+-mlongcalls
+-fno-builtin-memcpy
+-fno-builtin-memset
+-fno-builtin-bzero

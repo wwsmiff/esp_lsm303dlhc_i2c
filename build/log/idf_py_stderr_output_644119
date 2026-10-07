@@ -1,0 +1,13 @@
+Command: ninja all
+CMake Error at /home/arvk/.espressif/v6.1/esp-idf/tools/cmake/build.cmake:380 (message):
+  Failed to resolve component 'driver_i2c' required by component
+  'lsm303dlhc_i2c': unknown name.
+Call Stack (most recent call first):
+  /home/arvk/.espressif/v6.1/esp-idf/tools/cmake/build.cmake:429 (__build_resolve_and_add_req)
+  /home/arvk/.espressif/v6.1/esp-idf/tools/cmake/build.cmake:430 (__build_expand_requirements)
+  /home/arvk/.espressif/v6.1/esp-idf/tools/cmake/build.cmake:784 (__build_expand_requirements)
+  /home/arvk/.espressif/v6.1/esp-idf/tools/cmake/project.cmake:868 (idf_build_process)
+  CMakeLists.txt:6 (project)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

@@ -1,0 +1,942 @@
+Command: /home/arvk/.espressif/tools/python/v6.1/venv/bin/python /home/arvk/.espressif/v6.1/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/arvk/esp/lsm303dlhc_i2c/build/main.elf /home/arvk/esp/lsm303dlhc_i2c/build/bootloader/bootloader.elf -m '/home/arvk/.espressif/tools/python/v6.1/venv/bin/python' '/home/arvk/.espressif/v6.1/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15824
+load:0x40080400,len:3988
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct  5 2026 19:12:08[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (31) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a3fch ( 41980) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=0001a424 vaddr=3ffb0000 size=02b78h ( 11128) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001cfa4 vaddr=40080000 size=03074h ( 12404) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=10c5ch ( 68700) map[0m
+[0;32mI (137) esp_image: segment 4: paddr=00030c84 vaddr=40083074 size=08338h ( 33592) load[0m
+[0;32mI (151) esp_image: segment 5: paddr=00038fc4 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (157) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (157) boot: Disabling RNG early entropy source...[0m
+[0;32mI (169) cpu_start: Multicore app[0m
+[0;32mI (177) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (177) cpu_start: Pro cpu start user code[0m
+[0;32mI (177) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (179) app_init: Application information:[0m
+[0;32mI (183) app_init: Project name:     main[0m
+[0;32mI (187) app_init: App version:      1[0m
+[0;32mI (190) app_init: Compile time:     Oct  5 2026 19:12:02[0m
+[0;32mI (195) app_init: ELF file SHA256:  7612e47a9...[0m
+[0;32mI (200) app_init: ESP-IDF:          v6.1[0m
+[0;32mI (203) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (207) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (211) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (215) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (221) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (226) heap_init: At 3FFB35F8 len 0002CA08 (178 KiB): DRAM[0m
+[0;32mI (231) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (237) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (242) heap_init: At 4008B3AC len 00014C54 (83 KiB): IRAM[0m
+[0;32mI (249) spi_flash: detected chip: generic[0m
+[0;32mI (251) spi_flash: flash io: dio[0m
+[0;33mW (254) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (268) main_task: Started on CPU0[0m
+[0;32mI (268) main_task: Calling app_main()[0m
+No device found at address: 0.
+No device found at address: 1.
+No device found at address: 2.
+No device found at address: 3.
+No device found at address: 4.
+No device found at address: 5.
+No device found at address: 6.
+No device found at address: 7.
+No device found at address: 8.
+No device found at address: 9.
+No device found at address: a.
+No device found at address: b.
+No device found at address: c.
+No device found at address: d.
+No device found at address: e.
+No device found at address: f.
+No device found at address: 10.
+No device found at address: 11.
+No device found at address: 12.
+No device found at address: 13.
+No device found at address: 14.
+No device found at address: 15.
+No device found at address: 16.
+No device found at address: 17.
+No device found at address: 18.
+Found device at address: 19.
+No device found at address: 1a.
+No device found at address: 1b.
+No device found at address: 1c.
+No device found at address: 1d.
+Found device at address: 1e.
+No device found at address: 1f.
+No device found at address: 20.
+No device found at address: 21.
+No device found at address: 22.
+No device found at address: 23.
+No device found at address: 24.
+No device found at address: 25.
+No device found at address: 26.
+No device found at address: 27.
+No device found at address: 28.
+No device found at address: 29.
+No device found at address: 2a.
+No device found at address: 2b.
+No device found at address: 2c.
+No device found at address: 2d.
+No device found at address: 2e.
+No device found at address: 2f.
+No device found at address: 30.
+No device found at address: 31.
+No device found at address: 32.
+No device found at address: 33.
+No device found at address: 34.
+No device found at address: 35.
+No device found at address: 36.
+No device found at address: 37.
+No device found at address: 38.
+No device found at address: 39.
+No device found at address: 3a.
+No device found at address: 3b.
+No device found at address: 3c.
+No device found at address: 3d.
+No device found at address: 3e.
+No device found at address: 3f.
+No device found at address: 40.
+No device found at address: 41.
+No device found at address: 42.
+No device found at address: 43.
+No device found at address: 44.
+No device found at address: 45.
+No device found at address: 46.
+No device found at address: 47.
+No device found at address: 48.
+No device found at address: 49.
+No device found at address: 4a.
+No device found at address: 4b.
+No device found at address: 4c.
+No device found at address: 4d.
+No device found at address: 4e.
+No device found at address: 4f.
+No device found at address: 50.
+No device found at address: 51.
+No device found at address: 52.
+No device found at address: 53.
+No device found at address: 54.
+No device found at address: 55.
+No device found at address: 56.
+No device found at address: 57.
+No device found at address: 58.
+No device found at address: 59.
+No device found at address: 5a.
+No device found at address: 5b.
+No device found at address: 5c.
+No device found at address: 5d.
+No device found at address: 5e.
+No device found at address: 5f.
+No device found at address: 60.
+No device found at address: 61.
+No device found at address: 62.
+No device found at address: 63.
+No device found at address: 64.
+No device found at address: 65.
+No device found at address: 66.
+No device found at address: 67.
+No device found at address: 68.
+No device found at address: 69.
+No device found at address: 6a.
+No device found at address: 6b.
+No device found at address: 6c.
+No device found at address: 6d.
+No device found at address: 6e.
+No device found at address: 6f.
+No device found at address: 70.
+No device found at address: 71.
+No device found at address: 72.
+No device found at address: 73.
+No device found at address: 74.
+No device found at address: 75.
+No device found at address: 76.
+No device found at address: 77.
+No device found at address: 78.
+No device found at address: 79.
+No device found at address: 7a.
+No device found at address: 7b.
+No device found at address: 7c.
+No device found at address: 7d.
+No device found at address: 7e.
+xh = 1, xl = 144
+yh = 3, yl = 160
+zh = 49, zl = 192
+x = 400, y = 928, z = 12736
+xh = 1, xl = 128
+yh = 3, yl = 96
+zh = 49, zl = 48
+x = 384, y = 864, z = 12592
+xh = 1, xl = 128
+yh = 3, yl = 64
+zh = 49, zl = 64
+x = 384, y = 832, z = 12608
+xh = 1, xl = 32
+yh = 3, yl = 64
+zh = 49, zl = 80
+x = 288, y = 832, z = 12624
+xh = 1, xl = 128
+yh = 3, yl = 64
+zh = 49, zl = 96
+x = 384, y = 832, z = 12640
+xh = 1, xl = 112
+yh = 3, yl = 64
+zh = 49, zl = 176
+x = 368, y = 832, z = 12720
+xh = 1, xl = 96
+yh = 3, yl = 128
+zh = 49, zl = 96
+x = 352, y = 896, z = 12640
+xh = 1, xl = 176
+yh = 3, yl = 96
+zh = 49, zl = 64
+x = 432, y = 864, z = 12608
+xh = 1, xl = 128
+yh = 3, yl = 80
+zh = 49, zl = 128
+x = 384, y = 848, z = 12672
+xh = 1, xl = 176
+yh = 3, yl = 80
+zh = 49, zl = 144
+x = 432, y = 848, z = 12688
+xh = 1, xl = 128
+yh = 3, yl = 96
+zh = 49, zl = 48
+x = 384, y = 864, z = 12592
+xh = 1, xl = 64
+yh = 3, yl = 80
+zh = 49, zl = 144
+x = 320, y = 848, z = 12688
+xh = 1, xl = 128
+yh = 3, yl = 112
+zh = 49, zl = 64
+x = 384, y = 880, z = 12608
+xh = 1, xl = 112
+yh = 3, yl = 112
+zh = 49, zl = 144
+x = 368, y = 880, z = 12688
+xh = 1, xl = 80
+yh = 3, yl = 32
+zh = 49, zl = 192
+x = 336, y = 800, z = 12736
+xh = 1, xl = 96
+yh = 3, yl = 96
+zh = 49, zl = 48
+x = 352, y = 864, z = 12592
+xh = 1, xl = 192
+yh = 3, yl = 80
+zh = 49, zl = 48
+x = 448, y = 848, z = 12592
+xh = 1, xl = 176
+yh = 3, yl = 80
+zh = 49, zl = 64
+x = 432, y = 848, z = 12608
+xh = 1, xl = 112
+yh = 3, yl = 32
+zh = 49, zl = 176
+x = 368, y = 800, z = 12720
+xh = 1, xl = 80
+yh = 3, yl = 16
+zh = 49, zl = 144
+x = 336, y = 784, z = 12688
+xh = 1, xl = 112
+yh = 3, yl = 80
+zh = 49, zl = 128
+x = 368, y = 848, z = 12672
+xh = 1, xl = 160
+yh = 3, yl = 80
+zh = 49, zl = 112
+x = 416, y = 848, z = 12656
+xh = 1, xl = 128
+yh = 3, yl = 96
+zh = 49, zl = 80
+x = 384, y = 864, z = 12624
+xh = 1, xl = 48
+yh = 3, yl = 64
+zh = 49, zl = 96
+x = 304, y = 832, z = 12640
+xh = 1, xl = 112
+yh = 3, yl = 96
+zh = 49, zl = 64
+x = 368, y = 864, z = 12608
+xh = 1, xl = 64
+yh = 3, yl = 64
+zh = 49, zl = 64
+x = 320, y = 832, z = 12608
+xh = 1, xl = 96
+yh = 3, yl = 80
+zh = 49, zl = 112
+x = 352, y = 848, z = 12656
+xh = 1, xl = 160
+yh = 3, yl = 64
+zh = 49, zl = 112
+x = 416, y = 832, z = 12656
+xh = 1, xl = 128
+yh = 3, yl = 64
+zh = 49, zl = 48
+x = 384, y = 832, z = 12592
+xh = 1, xl = 128
+yh = 3, yl = 64
+zh = 49, zl = 112
+x = 384, y = 832, z = 12656
+xh = 1, xl = 160
+yh = 3, yl = 128
+zh = 49, zl = 96
+x = 416, y = 896, z = 12640
+xh = 1, xl = 96
+yh = 3, yl = 144
+zh = 49, zl = 128
+x = 352, y = 912, z = 12672
+xh = 1, xl = 144
+yh = 3, yl = 48
+zh = 49, zl = 96
+x = 400, y = 816, z = 12640
+xh = 1, xl = 176
+yh = 3, yl = 48
+zh = 49, zl = 80
+x = 432, y = 816, z = 12624
+xh = 1, xl = 96
+yh = 3, yl = 80
+zh = 49, zl = 160
+x = 352, y = 848, z = 12704
+xh = 1, xl = 192
+yh = 3, yl = 64
+zh = 49, zl = 64
+x = 448, y = 832, z = 12608
+xh = 1, xl = 160
+yh = 3, yl = 96
+zh = 49, zl = 48
+x = 416, y = 864, z = 12592
+xh = 1, xl = 128
+yh = 3, yl = 80
+zh = 49, zl = 80
+x = 384, y = 848, z = 12624
+xh = 1, xl = 96
+yh = 3, yl = 112
+zh = 49, zl = 160
+x = 352, y = 880, z = 12704
+xh = 1, xl = 144
+yh = 3, yl = 112
+zh = 49, zl = 96
+x = 400, y = 880, z = 12640
+xh = 1, xl = 96
+yh = 3, yl = 80
+zh = 49, zl = 48
+x = 352, y = 848, z = 12592
+xh = 1, xl = 96
+yh = 3, yl = 48
+zh = 49, zl = 64
+x = 352, y = 816, z = 12608
+xh = 1, xl = 96
+yh = 3, yl = 48
+zh = 49, zl = 80
+x = 352, y = 816, z = 12624
+xh = 1, xl = 176
+yh = 3, yl = 48
+zh = 49, zl = 80
+x = 432, y = 816, z = 12624
+xh = 1, xl = 96
+yh = 3, yl = 64
+zh = 49, zl = 80
+x = 352, y = 832, z = 12624
+xh = 1, xl = 112
+yh = 3, yl = 64
+zh = 49, zl = 112
+x = 368, y = 832, z = 12656
+xh = 1, xl = 144
+yh = 3, yl = 64
+zh = 49, zl = 64
+x = 400, y = 832, z = 12608
+xh = 1, xl = 160
+yh = 3, yl = 128
+zh = 49, zl = 96
+x = 416, y = 896, z = 12640
+xh = 1, xl = 176
+yh = 3, yl = 96
+zh = 49, zl = 176
+x = 432, y = 864, z = 12720
+xh = 1, xl = 192
+yh = 3, yl = 80
+zh = 49, zl = 96
+x = 448, y = 848, z = 12640
+xh = 1, xl = 112
+yh = 3, yl = 80
+zh = 49, zl = 48
+x = 368, y = 848, z = 12592
+xh = 1, xl = 128
+yh = 3, yl = 80
+zh = 49, zl = 144
+x = 384, y = 848, z = 12688
+xh = 1, xl = 128
+yh = 3, yl = 96
+zh = 49, zl = 32
+x = 384, y = 864, z = 12576
+xh = 1, xl = 112
+yh = 3, yl = 32
+zh = 49, zl = 96
+x = 368, y = 800, z = 12640
+xh = 1, xl = 80
+yh = 3, yl = 80
+zh = 49, zl = 128
+x = 336, y = 848, z = 12672
+xh = 1, xl = 144
+yh = 3, yl = 64
+zh = 49, zl = 80
+x = 400, y = 832, z = 12624
+xh = 1, xl = 112
+yh = 2, yl = 224
+zh = 49, zl = 80
+x = 368, y = 736, z = 12624
+xh = 1, xl = 128
+yh = 3, yl = 96
+zh = 49, zl = 112
+x = 384, y = 864, z = 12656
+xh = 1, xl = 160
+yh = 3, yl = 112
+zh = 49, zl = 64
+x = 416, y = 880, z = 12608
+xh = 1, xl = 144
+yh = 3, yl = 96
+zh = 49, zl = 128
+x = 400, y = 864, z = 12672
+xh = 1, xl = 144
+yh = 3, yl = 96
+zh = 49, zl = 96
+x = 400, y = 864, z = 12640
+xh = 1, xl = 144
+yh = 3, yl = 48
+zh = 49, zl = 144
+x = 400, y = 816, z = 12688
+xh = 1, xl = 144
+yh = 3, yl = 112
+zh = 49, zl = 80
+x = 400, y = 880, z = 12624
+xh = 1, xl = 128
+yh = 3, yl = 80
+zh = 49, zl = 80
+x = 384, y = 848, z = 12624
+xh = 1, xl = 176
+yh = 3, yl = 96
+zh = 49, zl = 32
+x = 432, y = 864, z = 12576
+xh = 1, xl = 96
+yh = 3, yl = 16
+zh = 49, zl = 96
+x = 352, y = 784, z = 12640
+xh = 1, xl = 160
+yh = 3, yl = 48
+zh = 49, zl = 32
+x = 416, y = 816, z = 12576
+xh = 1, xl = 128
+yh = 3, yl = 64
+zh = 49, zl = 112
+x = 384, y = 832, z = 12656
+xh = 1, xl = 144
+yh = 3, yl = 64
+zh = 49, zl = 96
+x = 400, y = 832, z = 12640
+xh = 1, xl = 208
+yh = 3, yl = 64
+zh = 49, zl = 128
+x = 464, y = 832, z = 12672
+xh = 1, xl = 128
+yh = 3, yl = 16
+zh = 49, zl = 64
+x = 384, y = 784, z = 12608
+xh = 1, xl = 64
+yh = 3, yl = 80
+zh = 49, zl = 80
+x = 320, y = 848, z = 12624
+xh = 1, xl = 144
+yh = 3, yl = 64
+zh = 49, zl = 80
+x = 400, y = 832, z = 12624
+xh = 1, xl = 176
+yh = 3, yl = 64
+zh = 49, zl = 96
+x = 432, y = 832, z = 12640
+xh = 1, xl = 192
+yh = 3, yl = 128
+zh = 49, zl = 128
+x = 448, y = 896, z = 12672
+xh = 1, xl = 96
+yh = 3, yl = 96
+zh = 49, zl = 64
+x = 352, y = 864, z = 12608
+xh = 1, xl = 160
+yh = 3, yl = 96
+zh = 49, zl = 16
+x = 416, y = 864, z = 12560
+xh = 1, xl = 160
+yh = 3, yl = 64
+zh = 49, zl = 80
+x = 416, y = 832, z = 12624
+xh = 1, xl = 48
+yh = 3, yl = 64
+zh = 49, zl = 32
+x = 304, y = 832, z = 12576
+xh = 1, xl = 128
+yh = 3, yl = 112
+zh = 49, zl = 112
+x = 384, y = 880, z = 12656
+xh = 1, xl = 96
+yh = 3, yl = 32
+zh = 49, zl = 112
+x = 352, y = 800, z = 12656
+xh = 1, xl = 144
+yh = 3, yl = 16
+zh = 49, zl = 112
+x = 400, y = 784, z = 12656
+xh = 1, xl = 64
+yh = 3, yl = 48
+zh = 49, zl = 48
+x = 320, y = 816, z = 12592
+xh = 1, xl = 96
+yh = 3, yl = 112
+zh = 49, zl = 64
+x = 352, y = 880, z = 12608
+xh = 1, xl = 64
+yh = 3, yl = 96
+zh = 49, zl = 64
+x = 320, y = 864, z = 12608
+xh = 1, xl = 112
+yh = 3, yl = 80
+zh = 49, zl = 160
+x = 368, y = 848, z = 12704
+xh = 1, xl = 80
+yh = 3, yl = 80
+zh = 49, zl = 80
+x = 336, y = 848, z = 12624
+xh = 1, xl = 128
+yh = 3, yl = 112
+zh = 49, zl = 112
+x = 384, y = 880, z = 12656
+xh = 1, xl = 128
+yh = 3, yl = 64
+zh = 49, zl = 176
+x = 384, y = 832, z = 12720
+xh = 1, xl = 160
+yh = 3, yl = 32
+zh = 49, zl = 112
+x = 416, y = 800, z = 12656
+xh = 1, xl = 160
+yh = 3, yl = 32
+zh = 49, zl = 96
+x = 416, y = 800, z = 12640
+xh = 1, xl = 160
+yh = 3, yl = 16
+zh = 49, zl = 16
+x = 416, y = 784, z = 12560
+xh = 1, xl = 64
+yh = 3, yl = 96
+zh = 49, zl = 112
+x = 320, y = 864, z = 12656
+xh = 1, xl = 112
+yh = 3, yl = 16
+zh = 49, zl = 96
+x = 368, y = 784, z = 12640
+xh = 1, xl = 112
+yh = 3, yl = 48
+zh = 49, zl = 48
+x = 368, y = 816, z = 12592
+xh = 1, xl = 192
+yh = 3, yl = 64
+zh = 49, zl = 192
+x = 448, y = 832, z = 12736
+xh = 1, xl = 96
+yh = 3, yl = 128
+zh = 49, zl = 48
+x = 352, y = 896, z = 12592
+xh = 1, xl = 96
+yh = 3, yl = 64
+zh = 49, zl = 96
+x = 352, y = 832, z = 12640
+xh = 1, xl = 80
+yh = 3, yl = 48
+zh = 49, zl = 32
+x = 336, y = 816, z = 12576
+xh = 1, xl = 112
+yh = 3, yl = 64
+zh = 49, zl = 176
+x = 368, y = 832, z = 12720
+xh = 1, xl = 96
+yh = 3, yl = 48
+zh = 49, zl = 128
+x = 352, y = 816, z = 12672
+xh = 1, xl = 128
+yh = 3, yl = 128
+zh = 49, zl = 96
+x = 384, y = 896, z = 12640
+xh = 1, xl = 144
+yh = 3, yl = 80
+zh = 49, zl = 0
+x = 400, y = 848, z = 12544
+xh = 1, xl = 128
+yh = 3, yl = 80
+zh = 49, zl = 64
+x = 384, y = 848, z = 12608
+xh = 1, xl = 112
+yh = 3, yl = 64
+zh = 49, zl = 80
+x = 368, y = 832, z = 12624
+xh = 1, xl = 96
+yh = 3, yl = 96
+zh = 49, zl = 16
+x = 352, y = 864, z = 12560
+xh = 1, xl = 192
+yh = 3, yl = 96
+zh = 49, zl = 16
+x = 448, y = 864, z = 12560
+xh = 1, xl = 192
+yh = 3, yl = 32
+zh = 49, zl = 112
+x = 448, y = 800, z = 12656
+xh = 1, xl = 144
+yh = 3, yl = 48
+zh = 49, zl = 192
+x = 400, y = 816, z = 12736
+xh = 1, xl = 128
+yh = 3, yl = 80
+zh = 49, zl = 160
+x = 384, y = 848, z = 12704
+xh = 1, xl = 144
+yh = 3, yl = 96
+zh = 49, zl = 112
+x = 400, y = 864, z = 12656
+xh = 1, xl = 160
+yh = 3, yl = 64
+zh = 49, zl = 80
+x = 416, y = 832, z = 12624
+xh = 1, xl = 144
+yh = 3, yl = 64
+zh = 49, zl = 96
+x = 400, y = 832, z = 12640
+xh = 1, xl = 128
+yh = 3, yl = 16
+zh = 49, zl = 96
+x = 384, y = 784, z = 12640
+xh = 1, xl = 128
+yh = 3, yl = 80
+zh = 49, zl = 32
+x = 384, y = 848, z = 12576
+xh = 1, xl = 160
+yh = 3, yl = 64
+zh = 49, zl = 144
+x = 416, y = 832, z = 12688
+xh = 1, xl = 160
+yh = 3, yl = 48
+zh = 49, zl = 48
+x = 416, y = 816, z = 12592
+xh = 1, xl = 160
+yh = 3, yl = 64
+zh = 48, zl = 224
+x = 416, y = 832, z = 12512
+xh = 1, xl = 112
+yh = 3, yl = 128
+zh = 49, zl = 64
+x = 368, y = 896, z = 12608
+xh = 1, xl = 144
+yh = 3, yl = 96
+zh = 49, zl = 112
+x = 400, y = 864, z = 12656
+xh = 1, xl = 176
+yh = 3, yl = 64
+zh = 49, zl = 32
+x = 432, y = 832, z = 12576
+xh = 1, xl = 112
+yh = 3, yl = 80
+zh = 49, zl = 112
+x = 368, y = 848, z = 12656
+xh = 1, xl = 192
+yh = 3, yl = 48
+zh = 49, zl = 96
+x = 448, y = 816, z = 12640
+xh = 1, xl = 128
+yh = 3, yl = 96
+zh = 49, zl = 48
+x = 384, y = 864, z = 12592
+xh = 1, xl = 128
+yh = 3, yl = 96
+zh = 49, zl = 96
+x = 384, y = 864, z = 12640
+xh = 1, xl = 144
+yh = 3, yl = 96
+zh = 49, zl = 32
+x = 400, y = 864, z = 12576
+xh = 1, xl = 192
+yh = 3, yl = 48
+zh = 49, zl = 64
+x = 448, y = 816, z = 12608
+xh = 1, xl = 144
+yh = 3, yl = 96
+zh = 49, zl = 64
+x = 400, y = 864, z = 12608
+xh = 1, xl = 80
+yh = 3, yl = 48
+zh = 49, zl = 128
+x = 336, y = 816, z = 12672
+xh = 1, xl = 96
+yh = 3, yl = 80
+zh = 49, zl = 80
+x = 352, y = 848, z = 12624
+xh = 1, xl = 112
+yh = 3, yl = 112
+zh = 49, zl = 128
+x = 368, y = 880, z = 12672
+xh = 1, xl = 176
+yh = 3, yl = 80
+zh = 49, zl = 96
+x = 432, y = 848, z = 12640
+xh = 1, xl = 112
+yh = 3, yl = 96
+zh = 49, zl = 192
+x = 368, y = 864, z = 12736
+xh = 1, xl = 96
+yh = 3, yl = 32
+zh = 49, zl = 48
+x = 352, y = 800, z = 12592
+xh = 1, xl = 160
+yh = 3, yl = 48
+zh = 49, zl = 128
+x = 416, y = 816, z = 12672
+xh = 1, xl = 160
+yh = 3, yl = 48
+zh = 49, zl = 160
+x = 416, y = 816, z = 12704
+xh = 1, xl = 176
+yh = 3, yl = 128
+zh = 49, zl = 128
+x = 432, y = 896, z = 12672
+xh = 1, xl = 112
+yh = 3, yl = 32
+zh = 49, zl = 64
+x = 368, y = 800, z = 12608
+xh = 1, xl = 64
+yh = 3, yl = 48
+zh = 49, zl = 112
+x = 320, y = 816, z = 12656
+xh = 1, xl = 128
+yh = 3, yl = 96
+zh = 49, zl = 128
+x = 384, y = 864, z = 12672
+xh = 1, xl = 96
+yh = 3, yl = 112
+zh = 49, zl = 160
+x = 352, y = 880, z = 12704
+xh = 1, xl = 80
+yh = 3, yl = 80
+zh = 49, zl = 64
+x = 336, y = 848, z = 12608
+xh = 1, xl = 192
+yh = 3, yl = 48
+zh = 49, zl = 96
+x = 448, y = 816, z = 12640
+xh = 1, xl = 208
+yh = 3, yl = 80
+zh = 49, zl = 48
+x = 464, y = 848, z = 12592
+xh = 1, xl = 176
+yh = 3, yl = 80
+zh = 49, zl = 160
+x = 432, y = 848, z = 12704
+xh = 1, xl = 160
+yh = 3, yl = 80
+zh = 49, zl = 64
+x = 416, y = 848, z = 12608
+xh = 1, xl = 160
+yh = 3, yl = 32
+zh = 49, zl = 96
+x = 416, y = 800, z = 12640
+xh = 1, xl = 144
+yh = 3, yl = 48
+zh = 49, zl = 128
+x = 400, y = 816, z = 12672
+xh = 1, xl = 144
+yh = 3, yl = 64
+zh = 49, zl = 112
+x = 400, y = 832, z = 12656
+xh = 1, xl = 128
+yh = 3, yl = 48
+zh = 49, zl = 48
+x = 384, y = 816, z = 12592
+xh = 1, xl = 144
+yh = 3, yl = 48
+zh = 49, zl = 64
+x = 400, y = 816, z = 12608
+xh = 1, xl = 32
+yh = 3, yl = 48
+zh = 49, zl = 160
+x = 288, y = 816, z = 12704
+xh = 1, xl = 64
+yh = 3, yl = 80
+zh = 49, zl = 112
+x = 320, y = 848, z = 12656
+xh = 1, xl = 112
+yh = 3, yl = 96
+zh = 49, zl = 128
+x = 368, y = 864, z = 12672
+xh = 1, xl = 192
+yh = 3, yl = 96
+zh = 49, zl = 128
+x = 448, y = 864, z = 12672
+xh = 1, xl = 128
+yh = 3, yl = 64
+zh = 49, zl = 80
+x = 384, y = 832, z = 12624
+xh = 1, xl = 80
+yh = 3, yl = 48
+zh = 49, zl = 208
+x = 336, y = 816, z = 12752
+xh = 1, xl = 160
+yh = 3, yl = 48
+zh = 49, zl = 144
+x = 416, y = 816, z = 12688
+xh = 1, xl = 96
+yh = 3, yl = 48
+zh = 49, zl = 80
+x = 352, y = 816, z = 12624
+xh = 1, xl = 128
+yh = 3, yl = 96
+zh = 49, zl = 48
+x = 384, y = 864, z = 12592
+xh = 1, xl = 128
+yh = 3, yl = 64
+zh = 49, zl = 112
+x = 384, y = 832, z = 12656
+xh = 1, xl = 96
+yh = 3, yl = 80
+zh = 49, zl = 64
+x = 352, y = 848, z = 12608
+xh = 1, xl = 96
+yh = 3, yl = 96
+zh = 49, zl = 32
+x = 352, y = 864, z = 12576
+xh = 1, xl = 144
+yh = 3, yl = 48
+zh = 49, zl = 128
+x = 400, y = 816, z = 12672
+xh = 1, xl = 80
+yh = 3, yl = 96
+zh = 49, zl = 96
+x = 336, y = 864, z = 12640
+xh = 1, xl = 192
+yh = 3, yl = 48
+zh = 49, zl = 112
+x = 448, y = 816, z = 12656
+xh = 1, xl = 112
+yh = 2, yl = 176
+zh = 49, zl = 96
+x = 368, y = 688, z = 12640
+xh = 1, xl = 96
+yh = 3, yl = 32
+zh = 49, zl = 80
+x = 352, y = 800, z = 12624
+xh = 1, xl = 80
+yh = 3, yl = 64
+zh = 49, zl = 112
+x = 336, y = 832, z = 12656
+xh = 1, xl = 128
+yh = 3, yl = 16
+zh = 49, zl = 144
+x = 384, y = 784, z = 12688
+xh = 1, xl = 80
+yh = 3, yl = 32
+zh = 49, zl = 112
+x = 336, y = 800, z = 12656
+xh = 1, xl = 96
+yh = 3, yl = 64
+zh = 49, zl = 128
+x = 352, y = 832, z = 12672
+xh = 1, xl = 144
+yh = 3, yl = 96
+zh = 49, zl = 112
+x = 400, y = 864, z = 12656
+xh = 1, xl = 112
+yh = 3, yl = 112
+zh = 49, zl = 96
+x = 368, y = 880, z = 12640
+xh = 1, xl = 112
+yh = 3, yl = 64
+zh = 49, zl = 96
+x = 368, y = 832, z = 12640
+xh = 1, xl = 144
+yh = 3, yl = 128
+zh = 49, zl = 80
+x = 400, y = 896, z = 12624
+xh = 1, xl = 144
+yh = 3, yl = 144
+zh = 49, zl = 32
+x = 400, y = 912, z = 12576
+xh = 1, xl = 112
+yh = 3, yl = 16
+zh = 49, zl = 144
+x = 368, y = 784, z = 12688
+xh = 1, xl = 80
+yh = 3, yl = 96
+zh = 49, zl = 128
+x = 336, y = 864, z = 12672
+xh = 1, xl = 176
+yh = 3, yl = 64
+zh = 49, zl = 32
+x = 432, y = 832, z = 12576
+xh = 1, xl = 144
+yh = 3, yl = 48
+zh = 49, zl = 96
+x = 400, y = 816, z = 12640
+xh = 1, xl = 144
+yh = 3, yl = 112
+zh = 49, zl = 192
+x = 400, y = 880, z = 12736
+xh = 1, xl = 80
+yh = 3, yl = 96
+zh = 49, zl = 48
+x = 336, y = 864, z = 12592
+xh = 1, xl = 176
+yh = 3, yl = 16
+zh = 49, zl = 48
+x = 432, y = 784, z = 12592
+xh = 1, xl = 128
+yh = 3, yl = 32
+zh = 49, zl = 112
+x = 384, y = 800, z = 12656
+xh = 1, xl = 144
+yh = 3, yl = 48
+zh = 49, zl = 48
+x = 400, y = 816, z = 12592
+xh = 1, xl = 80
+yh = 3, yl = 32
+zh = 49, zl = 48
+x = 336, y = 800, z = 12592
+xh = 1, xl = 112
+yh = 3, yl = 48
+zh = 49, zl = 80
+x = 368, y = 816, z = 12624
+xh = 1, xl = 80
+yh = 3, yl = 48
+zh = 49, zl = 80
+x = 336, y = 816, z = 12624
+xh = 1, xl = 208
+yh = 3, yl = 0
