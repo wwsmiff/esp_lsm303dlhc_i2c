@@ -33,18 +33,24 @@ void app_main(void) {
   i2c_master_dev_handle_t dev_handle;
 
   ESP_ERROR_CHECK(i2c_master_bus_add_device(bus_handle, &dev_cfg, &dev_handle));
-  ESP_ERROR_CHECK(lms303dlhc_acc_init(dev_handle, LMS303DLHC_ACC_INIT_DEFAULT));
+  ESP_ERROR_CHECK(lsm303dlhc_acc_init(dev_handle, LMS303DLHC_ACC_INIT_DEFAULT));
+  ESP_ERROR_CHECK(lsm303dlhc_mag_init(dev_handle));
 
   while (1) {
-    int16_t x = 0;
-    int16_t y = 0;
-    int16_t z = 0;
+    int16_t xacc = 0;
+    int16_t yacc = 0;
+    int16_t zacc = 0;
 
-    /*ESP_ERROR_CHECK(lms303dlhc_acc_get_x(dev_handle, &x));*/
-    /*ESP_ERROR_CHECK(lms303dlhc_acc_get_y(dev_handle, &y));*/
-    /*ESP_ERROR_CHECK(lms303dlhc_acc_get_z(dev_handle, &z));*/
-    ESP_ERROR_CHECK(lms303dlhc_acc_get_xyz(dev_handle, &x, &y, &z));
+    ESP_ERROR_CHECK(lsm303dlhc_acc_get_xyz(dev_handle, &xacc, &yacc, &zacc));
+    printf("[acc] x = %dmg, y = %dmg, z = %dmg\n", xacc, yacc, zacc);
 
-    printf("x = %dmg, y = %dmg, z = %dmg\n", x, y, z);
+    int16_t xmag = 0;
+    int16_t ymag = 0;
+    int16_t zmag = 0;
+
+    ESP_ERROR_CHECK(lsm303dlhc_acc_get_x(dev_handle, &xmag));
+    ESP_ERROR_CHECK(lsm303dlhc_acc_get_y(dev_handle, &ymag));
+    ESP_ERROR_CHECK(lsm303dlhc_acc_get_z(dev_handle, &zmag));
+    printf("[mag] x = %d, y = %d, z = %d\n", xmag, ymag, zmag);
   }
 }
